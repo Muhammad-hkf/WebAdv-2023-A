@@ -11,7 +11,75 @@
             <h1>Order your tickets</h1>
             <p class="h5">Fill in the details below</p>
             <hr />
-            <!--YOUR HTML-CODE COMES HERE-->
+
+            <h6>Full name</h6>
+            <hr />
+
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"> </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Last name</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"></label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <div id="exampleInputPassword1" class="form-text">First name</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phonenumber" class="form-label"></label>
+                    <input type="tel" class="form-control" id="phonenumber">
+                    <div id="exampleInputPassword1" class="form-text">Telephone Number</div>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        August 25
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        August 26
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+                    <label class="form-check-label" for="flexRadioDisabled">
+                        August 27
+                    </label>
+                </div>
+                <br>
+
+                <label for="customRange1" class="form-label"><b>Ammount of tickets (1-10)</b></label>
+                <input type="range" class="form-range" id="customRange1">
+
+                <br>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I accept the terms and conditions</label>
+                </div>
+
+
+
+
+
+
+                <br>
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="submit" class="btn btn-danger">Reset form</button>
+
+
+            </form>
+
+
+
+
         </main>
         <script src="js/bootstrap.bundle.min.js"></script>
     </body>
