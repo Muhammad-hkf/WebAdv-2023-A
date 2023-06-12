@@ -5,13 +5,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
         <title>Question 3</title>
+        <style>
+            #result span {
+                border-bottom: 1px solid #5f5f5f;
+                display: inline-block;
+                width: 40px;
+                text-align: center;
+                margin-right: 10px;
+                color: #f42020;
+                font-weight: bold;
+            }
+            .hitMe {
+                cursor: pointer;
+            }
+            svg {
+                width: 100%;
+                height: auto;
+            }
+            #resetScore {
+                cursor: pointer;
+                background-color: #fff;
+                border: none;
+                color: #000;
+                text-decoration: underline;
+
+            }
+            svg text {
+                pointer-events: none;
+                user-select: none;
+            }
+        </style>
     </head>
     <body>
         <main class="container">
-            <h1>Question 3</h1>
-            <p class="h5">subtitle</p>
+            <h1>Archery game</h1>
             <hr />
-            <!--YOUR HTML-CODE COMES HERE-->
+            <div class="h5">
+                <p id="result">
+                    Hit 1: <span></span>
+                    Hit 2: <span></span>
+                    Hit 3: <span></span>
+                    Total score: <span id="score">0</span></p>
+                <p id="resetScore">Reset score</p>
+            </div>
+            <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <circle class="hitMe" data-points="1" cx="200" cy="200" r="200" fill="lightgray" />
+                <circle class="hitMe" data-points="3" cx="200" cy="200" r="150" fill="black" />
+                <circle class="hitMe" data-points="6" cx="200" cy="200" r="100" fill="lightblue" />
+                <circle class="hitMe" data-points="8" cx="200" cy="200" r="50" fill="red" />
+                <circle class="hitMe" data-points="10" cx="200" cy="200" r="10" fill="yellow" />
+                <text x="50%" y="10%" text-anchor="middle" fill="black" font-size="40px">1</text>
+                <text x="50%" y="22%" text-anchor="middle" fill="white" font-size="35px">3</text>
+                <text x="50%" y="35%" text-anchor="middle" fill="black" font-size="30px">6</text>
+                <text x="50%" y="45%" text-anchor="middle" fill="white" font-size="22px">8</text>
+                <text x="50%" y="51%" text-anchor="middle" fill="black" font-size="13px">10</text>
+            </svg>
         </main>
         <script src="js/bootstrap.bundle.min.js"></script>
     </body>
